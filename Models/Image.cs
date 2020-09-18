@@ -10,7 +10,7 @@ namespace WebCrawler.Models
         public long PostId { get; set; }
         public virtual Post Post { get; set; }
         public string Path { get; set; }
-        public string Title { get; set; }
+        public string ImgTitle { get; set; }
         public string Description { get; set; }
     }
 }

@@ -10,8 +10,8 @@ using WebCrawler.Data;
 namespace WebCrawler.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20200917215343_Image")]
-    partial class Image
+    [Migration("20200918183732_UpdateImg")]
+    partial class UpdateImg
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -31,14 +31,14 @@ namespace WebCrawler.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImgTitle")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Path")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<long>("PostId")
                         .HasColumnType("bigint");
-
-                    b.Property<string>("Title")
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ImageId");
 

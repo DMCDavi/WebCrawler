@@ -29,14 +29,14 @@ namespace WebCrawler.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImgTitle")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Path")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<long>("PostId")
                         .HasColumnType("bigint");
-
-                    b.Property<string>("Title")
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ImageId");
 
